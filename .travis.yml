@@ -1,11 +1,17 @@
 language: java
 jdk:
-  - openjdk7
-  - openjdk8
-
+- openjdk7
+- openjdk8
 notifications:
   email:
     recipients:
-        - ernestodtv@gmail.com
+    - ernestodtv@gmail.com
     on_success: never
     on_failure: never
+deploy:
+  provider: heroku
+  api_key:
+    secure: xur1VGaLrqr0/GaKE80VcQfz5dR2ar24V8CQ6LAGiaYyenlmRlRtvXyXpGTmA4ek7orzfaeNZa3WAGYyvWsI/5zIvS3VtNRDiNafr0ZlKhuYwszROrasLpkAX2DxghTKV/qelcQ62TYoi/YL9cn1x6AWs3mXp9cy6nVNa5sUwcVqbkyceF4MBpIEnmoggcKnB5QodgTIlIrB4iW2zMUkAJ7r+T2yPfv7H/rRABNLwptD9/pWMf7/dyvS+6Dlh8YVJlgLKHBAjNSAi7m3UwXGi7nqeTFROS2lf/x0oq6opeZ7rdF6c+i/l7AMRNyQdAlH+lwNCZucIQE9z7kIu6hm8QoAwdz/5RKjiGIJ6qbyIx8lpPP89nCdyFWNrLiW/ya436w0+TgU9zB3v/ccv2LNNEPYAIMb+VxjuXPZaUpIUYQRtqzAYzGmaGobegNervxJL74tnlF2sXDQK0KrSscyPLJi/gGo4T+rhICSk1Wv6nZYWHOCGQlQVwzQDbsX7GfJ5FN2DblgRNt+1NTZfVY7mp4CvyRdMWqXZS84wSj53EWcG/p5+snc7lbN3EB/BgxlA6cpKTOvuwQdHotRYYCgksjY0kNqRIhTjltt7zPw8NDh7rVIN+Ny1WYR2ydekqf0TA3mU6D1KsqNj1zckUCywRXqHtM0CyX9t8Vs2hpipY0=
+  app: ejercicio3
+  on:
+    repo: ernestodtv/ejercicio3
